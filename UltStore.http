@@ -1,0 +1,6 @@
+@UltStore_HostAddress = http://localhost:5012
+
+GET {{UltStore_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
