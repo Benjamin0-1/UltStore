@@ -52,7 +52,7 @@ namespace UltStore.Infrastructure.Repositories.Authentication
             }
 
             // convert guid to string
-            return user.Id.ToString();
+            return user.Id.ToString(); // this will be used to generate the jwts.
         }
 
         public async Task<bool> ChangePasswordAsync(string email, string oldPassword, string newPassword)

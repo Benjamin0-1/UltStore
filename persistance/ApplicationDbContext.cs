@@ -35,6 +35,14 @@ namespace UltStore.Persistance
                 entity.Property(e => e.LastName).IsRequired().HasMaxLength(50);
                 entity.Property(e => e.Email).IsRequired().HasMaxLength(100);
                 entity.Property(e => e.Password).IsRequired().HasMaxLength(100);
+
+                // relationship between user and role
+
+                // a role can have many users, a user can have only one role
+                entity.HasOne(e => e.Role)
+                    .WithMany(e => e.Users)
+                    .HasForeignKey(e => e.RoleId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             // Add other entity configurations here
