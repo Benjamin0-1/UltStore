@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UltStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50818c1d8e3fab09f4066c2e5a3ca86e3d81b645")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6045a2e4b2a192e05b8284c68347b65ad4c33916")]
 [assembly: System.Reflection.AssemblyProductAttribute("UltStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UltStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

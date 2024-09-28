@@ -15,6 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
 // the remaning repositories...
 
+// Add jwt settings, which are configured in DependencyInjection.cs
 // Correctly configure MediatR services
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(RegisterUserCommandHandler).Assembly));
 
@@ -33,3 +34,4 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.Run();
+
